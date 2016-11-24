@@ -39,8 +39,7 @@
 *.asm
 *.mk
 *.bash
-firmware/build/
-firmware/dist/
-firmware.old/
+test/build/
+test/dist/
 Makefile-genesis.properties
 mockups/
