@@ -11,12 +11,17 @@ void main(void) {
   
   // setup XC8-PS2
   ps2_init(&PORTB, 7, &PORTB, 6);
-  
-  // send messages
-  ps2_send(0x02); 
-  ps2_send(0x04);
-  ps2_send(0x06); 
-  
+
   // program loop
-  while(1);
+  while(1) {
+    // send msg
+    ps2_send(0x1C);   // send make key 'a'
+    // wait
+    __delay_ms(10);
+    // send msg
+    ps2_send(0xF0);   // send break code
+    ps2_send(0x1C);   // send break key 'a'
+    // wait
+    __delay_ms(10);
+  }
 }
