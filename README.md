@@ -5,7 +5,7 @@ To use in a project, add :
 ```c
 #include "ps2.h"
 ```
-**⚠️IMPORTANT⚠️** You MUST redefine \_XTAL\_FREQ in ps2.h for the program to work at the correct clock speed.
+**⚠️IMPORTANT⚠️** You MUST redefine \_XTAL\_FREQ in ps2.h for the library to work at the correct clock speed.
 
 ## api
 
