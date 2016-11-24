@@ -1,10 +1,11 @@
 # xc8-ps2
 A xc8 library for PIC16-18f to simulate the behaviour of any PS/2 controller.
 
-To use in a project, just add :
+To use in a project, add :
 ```c
 #include "ps2.h"
 ```
+**⚠️IMPORTANT⚠️** You MUST redefine \_XTAL\_FREQ in ps2.h for the program to work at the correct clock speed.
 
 ## api
 

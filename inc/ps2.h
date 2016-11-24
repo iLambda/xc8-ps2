@@ -6,6 +6,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 
+#define _XTAL_FREQ  48000000
+
 #define PS2_CLOCK_LENGTH_HALF 35
 #define PS2_CLOCK_LENGTH      2*PS2_CLOCK_LENGTH_HALF
 
