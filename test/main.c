@@ -10,7 +10,7 @@ void main(void) {
   PORTB = 0x00;
   
   // setup XC8-PS2
-  ps2_init(&PORTB, (1 << 7), &PORTB, (1 << 6));
+  ps2_init(&PORTB, 7, &PORTB, 6);
   
   // send messages
   ps2_send(0x02); 
